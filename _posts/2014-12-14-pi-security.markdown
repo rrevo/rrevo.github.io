@@ -2,6 +2,7 @@
 layout: post
 title:  "Raspberry Pi meet Security system"
 date:   2014-12-14
+summary: More dream ideas
 ---
 
 I have a new security system for my home. It consists of various sensors entry/exit and motion to detect a break-in. I want to gather information about the events for building custom alerts and logging for future data analysis. However there is no interface to the security system for obvious reasons.

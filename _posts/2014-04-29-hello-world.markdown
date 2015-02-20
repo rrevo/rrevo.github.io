@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Hello World"
+title:  Hello World
 date:   2014-04-29
+summary: Reset
 ---
 
 Hello World! I've been blogging occasionally on [codeword](http://codeword.blogspot.com) but have not been as regular as I would like. So time to make another start.

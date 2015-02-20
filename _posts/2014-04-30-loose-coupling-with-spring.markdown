@@ -2,6 +2,7 @@
 layout: post
 title:  "Loose coupling with Spring"
 date:   2014-04-30
+summary: Overview of the Spring project and Dependency Injection
 ---
 
 # Spring project

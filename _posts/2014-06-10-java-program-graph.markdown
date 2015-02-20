@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Graph my Program"
+title:  Graph my Program
 date:   2014-06-10
+summary: Ideas for code visualizations
 ---
 
 Recently (and since forever) I've been thinking about how tooling can be improved for programmers. We have essentially been writing source code in editors and IDE's for many years now. Is it possible to improve visualization so that understanding larger codebases becomes simpler? Something like Windows Workflow Foundation (an orchestration framework) but for a larger scale.

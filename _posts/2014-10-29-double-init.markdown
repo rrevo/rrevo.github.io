@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Double Initialization pattern in Java"
+title:  Double Initialization pattern in Java
 date:   2014-10-29
 ---
 

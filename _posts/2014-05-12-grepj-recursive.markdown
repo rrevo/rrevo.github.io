@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Grepj - Finding classes in jar files"
+title:  Grepj
 date:   2014-05-12
+summary: Tool for finding classes in jar files
 ---
 
 [grepj](https://github.com/rrevo/grepj) is a tool for finding class files in a jar or war. Essentially it is grep for java classes. This is something that I need often on deployment systems; usually when trying to find which version of a class has been packaged and in which jar.
