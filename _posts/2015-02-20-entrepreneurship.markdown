@@ -12,7 +12,7 @@ The courses cover two primary sections from the book [Disciplined Entrepreneursh
 * 101 - Who is your customer? (blue section)
 * 102 - What can you do for your customer? (red section)
 
-<img src="/imgs/entrepreneurship.png" />
+<img src="{{ site.url }}{{ site.baseurl }}/imgs/entrepreneurship.png" />
 
 I am working my way through the 101 course right now. In the past I've made *attempts* at starting a business and failed for various reasons. Because of my engineering mindset, I've always wanted to jump directly into implementing a solution without necessarily thinking about the viability of the business. The book and the course are especially pertinent to me for this reason.
 
