@@ -5,13 +5,11 @@ date:   2014-04-30
 summary: Overview of the Spring project and Dependency Injection
 ---
 
-# Spring project
-
 The [Spring framework](http://projects.spring.io/spring-framework/) is a Dependency Injection framework. Objects define dependencies and the framework then provides (or injects) them at runtime. So instead of tight coupling where you create dependencies the model is inverted thus leading to loose coupling.
 
 Configuration about the java objects (or beans) can be specified in different ways. In earlier versions of Spring xml files contained bean metadata. Annotations are also supported for specifying this information. [JSR 330](https://jcp.org/en/jsr/detail?id=330) added Dependency Injection to java which standardized the annotations for this purpose.
 
-# Example
+### Example
 
 {% highlight xml %}
 <!-- beans.xml -->
@@ -33,7 +31,7 @@ Foo foo = context.getBean("foo", Foo.class);
 
 This xml file will then be loaded into an ApplicationContext and you can get actual bean instances.
 
-# Imports
+### Imports
 
 For a simple project you may have a single file containing bean definitions. But for larger projects it is possible to split the definitions into multiple files. You can then merge multiple files into using the import tag.
 
@@ -46,7 +44,7 @@ For a simple project you may have a single file containing bean definitions. But
 
 Now beans.xml aggregates the definitions from base-beans.xml
 
-# Dynamic injection 
+### Dynamic injection 
 
 Even more powerful than explicit imports is loading multiple bean definitions in the ApplicationContext. Different bean definitions can be specified in different configuration files. They may reference beans from different places without even knowing how or when the dependencies will be satisfied.
 
@@ -76,7 +74,7 @@ context.setConfigLocations(new String[] {"classpath*:/beans-*.xml"});
 
 using wildcards and dynamic loading to complete the magic. 
 
-# References
+### References
 
 * [Spring beans](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/beans.html)
 
