@@ -22,7 +22,7 @@ Some of the myths about entrepreneurship that are debunked are-
 
 * Entrepreneurs are born not made - Teaching the process is the aim of the course.
 * Individuals start companies - (Diverse) Teams start companies. I've not been able to get more people involved in my earlier ventures.
-* Smartest people start companies - Focussed & dedicated people are needed.
+* Smartest people start companies - Focused & dedicated people are needed.
 * Charismatic - Vision, Systematic thinking, Strong analytical skills, Humility and Ambition and Disciplined execution skills.
 * Love risk - Calculated risk is the key.
 * Undisciplined - In fact need great execution skills.
