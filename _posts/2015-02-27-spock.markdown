@@ -7,4 +7,4 @@ summary: Live long and prosper
 
 Leonard Nimoy passed away today.
 
-![Spock](http://ia.media-imdb.com/images/M/MV5BMTQxNjgzOTY2M15BMl5BanBnXkFtZTgwMDM1ODM0MDE@._V1_SX640_SY720_.jpg)
+![Spock]({{ site.url }}{{ site.baseurl }}/imgs/spock.jpg)
