@@ -1,0 +1,29 @@
+---
+layout:  post
+title:   Agile
+date:    2015-03-11
+summary: How -not- to manage software teams?
+---
+
+Things are usually not what they seem at first glance.
+
+Since college I have been passionate about programming. Earlier my focus was always on learning new cool things - languages and frameworks. Over the years I've learnt many things about the industry. Among those is the fact that building a product is not about programming. A major factor in the success of a team or product is the *people*. The business of software is much more than churning out code.
+
+Software is complex - art and science. Programmers like other knowledge workers are difficult to herd. We're usually a well paid bunch so motivation by money (though truck loads will work) is difficult. We need more.
+
+Why then do so many teams and companies fall into the Agile trap. Using tools like [Rally](https://www.rallydev.com/) to micro-manage engineers? Countless meetings to plan and track work. Meetings kill creativity which then slows down work becoming a vicious cycle.
+
+Frankly, I actually like the [Agile Manifesto](http://agilemanifesto.org/).
+
+* Individuals and interactions over processes and tools
+* Working software over comprehensive documentation
+* Customer collaboration over contract negotiation
+* Responding to change over following a plan
+
+These align business and software. But all these ideas have now become warped into something crazy. The original intent has been lost. The cracks started appearing once you had [Certified Scrum Masters](https://www.scrumalliance.org/certifications/practitioners/certified-scrummaster-csm). That's when managers started looking at tools instead of talking to people.
+
+Process labels do not matter. Use common sense. Understand people, motivate them. The rest will fall into place.
+
+![Microservices](http://i.imgur.com/pPgAn6A.jpg)
+
+Get back to basics. And we're calling it [agility](http://pragdave.me/blog/2014/03/04/time-to-kill-agile/) this time. 
