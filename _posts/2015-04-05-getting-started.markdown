@@ -96,6 +96,26 @@ for (Vertex v : graph.getVertices()) {
 
 Other CRUD operations on Vertices, Edges and their properties also exist.
 
+### Java object transformation
+
+In the example above I have shown the base API to create a common property based Vertex and Edge. However a better API is using POJO's that contain the fields for the model and then transparently persist them into the map.
+
+TinkerPop frames allow transformation from a POJO to a Vertex and vice-versa. API example is-
+
+    Graph graph = ... ;
+    FramedGraphFactory factory = new FramedGraphFactory();
+    FramedGraph<Graph> framedGraph = factory.create(graph);
+
+    Foo f = framedGraph.getVertex(id, Foo.class);
+
+[Frames documentation](https://github.com/tinkerpop/frames/wiki/Getting-Started) contains an example where annotations are used to describe the fields and relationships.
+
+To access the underlying API, any class can be cast to a VertexFrame which can return the underlying Vertex.
+
+Manually creating mapper classes is another option to convert from POJO's to Graph classes.
+
+OrientDB also allows for an actual [Schema](http://www.orientechnologies.com/docs/last/orientdb.wiki/Graph-Schema.html). I'll need to investigate how this can be used.
+
 ### WIP
 
 I'll be updating this blog with more basic APIs.
@@ -105,6 +125,8 @@ I'll be updating this blog with more basic APIs.
 * OrientDB seems to support so many features. How is performance?
 * Hazelcast
 * Indexes
+* OrientDB schema-classes
+* SQL
 
 ### Other references
 
