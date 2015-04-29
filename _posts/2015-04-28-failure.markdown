@@ -1,0 +1,23 @@
+---
+layout:  post
+title:   Failure
+date:    2015-04-28
+summary: Move on
+---
+
+I was working on a performance optimization since a couple of weeks. It was a relatively new area that I was working on. Obviously who has the time to completely grok the complete manual or read the fine print. There was relatively high pressure to get results. And then I realised that I had made some mistake earlier and had to give up on that optimization. What a sunken feeling!
+
+The rest of the day was miserable. Had to do some explaining and then picked up some other tasks. But overall let the day pass.
+
+Today the sun was shining as brightly as ever. Things were not looking as critical anymore. Looking back; there were actually some good parts
+
+* Failing makes you realise that you need a reset. I had been on continuous projects for too long, feeling way too tired.
+* Most of the pain was because of my own super high expectations. Some time was spent but it was not a complete loss. I did get some material for a blog ;)
+* I believe that people should always keep experimenting. And that's what I was doing. Not all experiments are successs. Then the experiments would be too simple.
+
+At the same time there were some mistakes that could be avoided.
+
+* Better document testing results. I had run some tests early on and later on had not kept the results. By then I was too deep into the task to pull out.
+* Test assumptions better and not get too emotionally attached with expectations. I had read this idea in an article and it sounded perfectly logical. I remember doing some tests but have a feeling that I was not too critical. Somewhere I must have been too biased already to have glossed over some details.
+
+So just be brave enough to accept failure and be and move on to the next challenge. There is always something learnt from these experience even though it's the hard way sometimes.
