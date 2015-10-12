@@ -1,0 +1,63 @@
+---
+layout:  post
+title:   Just-In-Time compilation
+date:    2015-10-12
+summary: Underneath the JVM
+---
+
+Since a week or so I've been stuggling with one question; How do virtual machines (VM) perform [Just-In-Time](https://en.wikipedia.org/wiki/Just-in-time_compilation) (JIT) compilation? Simple VM's work as interpreters. As an example in Java, the [bytecode](https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings) possible is well defined in a spec and a VM can be implemented that has fixed mappings of how those bytecode instructions will be executed on the host operating system. Things get interesting when the VM dynamically compiles parts of the bytecode at runtime of the program.
+
+Operating Systems(OS) run machine code. A higher abstraction is native binaries like [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) on Unix. When you compile code like C or C++ native binaries are created. The ELF format defines a code area that contains excutable instructions as well as data segments.
+
+For VM's the machine code is not generated at compile time but is dynamically generated at runtime. So how then does this work?
+
+The wikipedia entry on JIT had the answer in the Security section.
+
+> JIT compilation fundamentally uses executable data, and thus poses security challenges and possible exploits.
+
+> Implementation of JIT compilation consists of compiling source code or byte code to machine code and executing it. This is generally done directly in memory – the JIT compiler outputs the machine code directly into memory and immediately executes it, rather than outputting it to disk and then invoking the code as a separate program, as in usual ahead of time compilation. In modern architectures this runs into a problem due to executable space protection – arbitrary memory cannot be executed, as otherwise there is a potential security hole. Thus memory must be marked as executable; for security reasons this should be done after the code has been written to memory, and marked read-only, as writable/executable memory is a security hole
+
+One of the implementations mentioned on the page was Mozilla nanojit. Searching led me to-
+
+```cpp
+
+void CodeAlloc::markCodeChunkExec(void* addr, size_t nbytes) {
+    //printf("protect   %d %p\n", (int)nbytes, addr);
+    AVMPI_makeCodeMemoryExecutable(addr, nbytes, true); // RX
+}
+```
+
+with a POSIX implementation of -
+
+``` cpp
+void AVMPI_makeCodeMemoryExecutable(void *address, size_t nbytes, bool makeItSo)
+{
+    size_t pagesize = VMPI_getVMPageSize();
+    int flags = makeItSo ? PROT_EXEC|PROT_READ : PROT_WRITE|PROT_READ;
+    int retval = mprotect((maddr_ptr)address, (unsigned int)nbytes, flags);
+}
+
+```
+
+The call [mprotect](http://linux.die.net/man/2/mprotect) sets the memory protection mapping which can be set as-
+
+* PROT_NONE - The memory cannot be accessed at all.
+* PROT_READ - The memory can be read.
+* PROT_WRITE - The memory can be modified.
+* PROT_EXEC - The memory can be executed.
+
+So essentially a new program is written as data in memory and then that memory location is set as executable.
+
+Windows has a similar concept -
+
+``` c
+void AVMPI_makeCodeMemoryExecutable(void *address, size_t nbytes, bool makeItSo)
+{
+    size_t pagesize = VMPI_getVMPageSize();
+    DWORD newProtectFlags = PAGE_READWRITE;
+    VirtualProtect(address, markSize, newProtectFlags, &oldProtectFlags);
+    ...
+}
+```
+
+PS. Languges like Go generate OS binaries as well during compilation. These binaries created  contain the complete VM along with the user program.
