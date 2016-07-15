@@ -2,7 +2,7 @@
 layout:  post
 title:   Handbook for Software Teams
 date:    2016-07-14
-summary: Execution
+summary: Culture of teams.
 ---
 
 [Gitlab](http://gitlab.org) has published their [Handbook](https://about.gitlab.com/handbook/#values) online. Each company, team and organization has a particular "culture". Some aspects in this handbook definitely resonate with me. I'll add my notes in *italics*.
