@@ -7,3 +7,5 @@ _config.gh-pages.yml
 
 .idea
 *.iml
+
+.vscode
