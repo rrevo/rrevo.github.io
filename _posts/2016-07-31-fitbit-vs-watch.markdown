@@ -20,3 +20,6 @@ In the long term I believe the Apple watch will gain over fitbit. Fitbit's curre
 [Pokemon Go](http://www.pokemongo.com) is the currently the most popular game on phones. With pokemon, eggs, items, teams, location, badges and so many other game systems they have millions of people hooked and can continue providing new experiences rather easily. They are getting many people to get out and walk around; although in zombie state.
 
 A watch version of the game is going to be a massive killer-app. This is something that fitbit will not be able to get and then pure fitness is not going to be enough.
+
+Update Sept 7th: The watch killer app is [here](http://arstechnica.com/gaming/2016/09/pokemon-go-plus-coming-to-apple-watch/)
+
