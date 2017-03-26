@@ -3,6 +3,7 @@ layout: post
 title:  Clojure
 date:   2017-03-25
 summary: Getting started with clojure
+tags:   clojure
 ---
 
 [Clojure](https://clojure.org/) is lisp dialect by Rich Hickey. It is a dynamic programming language with a focus on immutability and concurrency. For backend systems, it can run on the JVM and has good accessbility to the java libraries making it very practical.
@@ -23,4 +24,20 @@ Learning the language has not been easy though. The syntax and concepts are diff
 
 Clojure also has a different data-driven approach to designing libraries. That's going to take some time to get used to. The book "Joy of Clojure" is about the idoimatic way of doing things. That's another book to read in the future.
 
+Various Concepts-
+
+* Parentheses and prefix notation.
+* Basic scalar types, Symbols and Keywords.
+* Lists - Function calls vs pure data.
+* Immutable persistent data structures. Sets, Vectors, Maps in addition to Lists.
+* Sequence representation and the various functions available. map/reduce.
+* Functions - Different definition styles, arity, variadic args.
+* Destructuring.
+* Flow with if, when, cond, loop/recur.
+* Metadata
+* vars and binding
+* Polymorphism
+* defmulti, defmethod
+* Java interop - Calling java and generating java classes
+* atom, ref, agents
 
