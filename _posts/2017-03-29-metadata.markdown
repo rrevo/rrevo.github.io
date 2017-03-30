@@ -1,0 +1,57 @@
+---
+layout: post
+title:  Clojure Metadata
+date:   2017-03-29
+summary:
+tags:   clojure
+---
+
+Clojure has a feature called [Metadata](https://clojure.org/reference/metadata) i.e. data about data. Using metadata it is possible to add a map with some information to some objects like symbols and collections.
+
+## API
+
+The API for metadata is pretty basic-
+
+`with-meta` - Set the metadata map. The reader macro ^ can also be used instead of the meta function. Multiple ^ macros can be cascaded.
+
+{% highlight clojure %}
+(def foo ^{:my-meta "bar"} {:lang "clojure"})
+;; #'user/foo
+
+(def foo2 ^{:my-meta "bar"} ^{:more-meta "baz"} {:lang "lisp"})
+;; #'user/foo2
+{% endhighlight %}
+
+`meta` - Get the metadata map set for the object or nil
+
+{% highlight clojure %}
+(meta foo)
+;; {:my-meta "bar"}
+
+(meta foo2)
+;; {:more-meta "baz", :my-meta "bar"}
+{% endhighlight %}
+
+## Internal usage
+
+Clojure source uses metadata for annotating various artifacts. Some keys are :doc, :added (equivalent to javadoc @since), :static, :dynamic, :arglists.
+
+## Implementation
+
+The java interfaces that declare metadata support are `IMeta` and `IObj`.
+
+{% highlight java %}
+package clojure.lang;
+
+interface IMeta {
+  IPersistentMap meta();
+}
+
+interface IObj extends IMeta {
+  IObj withMeta(IPersistentMap meta);
+}
+{% endhighlight %}
+
+`with-meta` invokes `withMeta` with the map object and `meta` returns the map.
+
+`IObj` is a super interface for multiple clojure types.

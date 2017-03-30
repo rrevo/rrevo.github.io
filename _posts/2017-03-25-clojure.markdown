@@ -34,10 +34,13 @@ Various Concepts-
 * Functions - Different definition styles, arity, variadic args.
 * Destructuring.
 * Flow with if, when, cond, loop/recur.
-* Metadata
+* [Metadata]({{ site.baseurl }}{% post_url 2017-03-29-metadata %})
 * vars and binding
 * Polymorphism
 * defmulti, defmethod
 * Java interop - Calling java and generating java classes
 * atom, ref, agents
-
+* futures and promises
+* Macros
+* Protocols, Records, Types
+* Unit testing
