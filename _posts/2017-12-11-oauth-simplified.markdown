@@ -27,12 +27,15 @@ With the OAuth flows, the problem becomes securely getting an access_token from 
 Various interactions between the actors are shown below
 
 <!--
+https://www.websequencediagrams.com/
+
 "User"->"Client Server": Action
 
 par User Login
   "Client Server"->"Client Server": "Generate state"
   User->"Resource Server": /login info with client state and id
-  "Resource Server"->"Client Server": /redirect_uri with Code
+  "Resource Server"->"Client Server": /redirect_uri with state, code
+  "Client Server"->"Client Server": "Validate received state"
 end
 
 par Token Exchange
