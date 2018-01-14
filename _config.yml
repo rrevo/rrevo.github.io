@@ -29,6 +29,9 @@ bitcoin_url:
 paypal_url:
 flattr_button:
 
+# Serving
+port:    4001
+
 # Build settings
 markdown:     kramdown
 redcarpet:
