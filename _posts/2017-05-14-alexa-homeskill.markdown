@@ -3,7 +3,7 @@ layout: post
 title:  Alexa Smart Home integration
 date:   2017-05-14
 summary:
-tags:   alexa
+tags:   alexa home-automation
 ---
 
 Alexa is Amazon's voice search. It is integrated into the Echo line of devices. Alexa can be extended by implementing a "skill". The [SDK](https://developer.amazon.com/alexa-skills-kit) has details on how this can be done.
