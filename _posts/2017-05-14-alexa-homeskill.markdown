@@ -70,6 +70,10 @@ The [API Reference](https://developer.amazon.com/public/solutions/alexa/alexa-sk
 
 ## Sample implementation
 
+ <mark>This sample is a version 2 Alexa skill implementation. Alexa API Is now at version 3.</mark>
+
+Version 2 documents are now listed in a [legacy section](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/archive/shv2-understanding-the-smart-home-skill-api)
+
 On [Github](https://github.com/rrevo/alexa-homeskill) I've uploaded a sample implementation with dummy OAuth and a Smart Home skill. The implementation is written in Java and the steps to get a working solution are listed below.
 
 For deployment, the services used are Alexa, API Gateway and Lambda. Use US East (N. Virginia) for deployments in AWS. Alexa is available in that region along with all the other services.
@@ -110,6 +114,17 @@ For the skill, Amazon decided not to follow the OAuth spec. The access tokens ar
 * Use a rest client to test the various OAuth endpoints.
 * For Alexa testing, add an account for beta usage. During discovery, a test device called Room Lights is added.
 * Say "Alexa, turn on Room lights" to pseudo turn on the lights or "Alexa, turn off Room lights" to turn them off.
+
+## Latest AWS Documentation
+
+AWS documentation on building home skills has improved a lot since the initial versions. Part of the rationale for this blog was to connect all the dots. I would recommend-
+
+* [Understand the Smart Home Skill API](https://developer.amazon.com/docs/smarthome/understand-the-smart-home-skill-api.html)
+* [Steps to Build a Smart Home Skill](https://developer.amazon.com/docs/smarthome/steps-to-build-a-smart-home-skill.html)
+* [Build Smart Home Skills for Lights](https://developer.amazon.com/docs/smarthome/build-smart-home-skills-for-lights.html)
+* [API Reference](https://developer.amazon.com/docs/device-apis/message-guide.html)
+* [Alexa.PowerController Interface](https://developer.amazon.com/docs/device-apis/alexa-powercontroller.html)
+
 
 # Summary
 
