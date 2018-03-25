@@ -22,7 +22,7 @@ The [Object Persistence Interface](https://docs.aws.amazon.com/amazondynamodb/la
 
 ## Preventing Overwrites of an Existing Item 
 
-Items are identified by a primary key. It multiple `PutItem` operations are done for the same key, then data will be overwriten. To prevent this, [documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ConditionExpressions.html#Expressions.ConditionExpressions.PreventingOverwrites) states that a condition expression needs to be used. This will allow the write to proceed only if the item in question does not already have the same key-
+Items are identified by a primary key. If multiple `PutItem` operations are done for the same key, then data will be overwritten. To prevent this, [documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ConditionExpressions.html#Expressions.ConditionExpressions.PreventingOverwrites) states that a condition expression needs to be used. This will allow the write to proceed only if the item in question does not already have the same key-
 
 {% highlight shell %}
 aws dynamodb put-item \

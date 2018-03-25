@@ -5,9 +5,9 @@ date:    2015-10-12
 summary: Underneath the JVM
 ---
 
-Since a week or so I've been stuggling with one question; How do virtual machines (VM) perform [Just-In-Time](https://en.wikipedia.org/wiki/Just-in-time_compilation) (JIT) compilation? Simple VM's work as interpreters. As an example in Java, the [bytecode](https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings) possible is well defined in a spec and a VM can be implemented that has fixed mappings of how those bytecode instructions will be executed on the host operating system. Things get interesting when the VM dynamically compiles parts of the bytecode at runtime of the program.
+Since a week or so I've been struggling with one question; How do virtual machines (VM) perform [Just-In-Time](https://en.wikipedia.org/wiki/Just-in-time_compilation) (JIT) compilation? Simple VM's work as interpreters. As an example in Java, the [bytecode](https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings) possible is well defined in a spec and a VM can be implemented that has fixed mappings of how those bytecode instructions will be executed on the host operating system. Things get interesting when the VM dynamically compiles parts of the bytecode at runtime of the program.
 
-Operating Systems(OS) run machine code. A higher abstraction is native binaries like [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) on Unix. When you compile code like C or C++ native binaries are created. The ELF format defines a code area that contains excutable instructions as well as data segments.
+Operating Systems(OS) run machine code. A higher abstraction is native binaries like [ELF](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) on Unix. When you compile code like C or C++ native binaries are created. The ELF format defines a code area that contains executable instructions as well as data segments.
 
 For VM's the machine code is not generated at compile time but is dynamically generated at runtime. So how then does this work?
 

@@ -12,7 +12,7 @@ Here are some references for getting started with a Pi
 * Reformat a new image on the SD card - <https://www.raspberrypi.org/documentation/installation/installing-images/mac.md>
 * Setup Wifi - <http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/>
 * Update OS - <https://www.raspberrypi.org/documentation/raspbian/updating.md>
-* Setup passwordless ssh access
+* Setup password-less ssh access
 
 Finally Hack away!
 

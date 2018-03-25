@@ -6,7 +6,7 @@ summary: Getting started with clojure
 tags:   clojure
 ---
 
-[Clojure](https://clojure.org/) is lisp dialect by Rich Hickey. It is a dynamic programming language with a focus on immutability and concurrency. For backend systems, it can run on the JVM and has good accessbility to the java libraries making it very practical.
+[Clojure](https://clojure.org/) is lisp dialect by Rich Hickey. It is a dynamic programming language with a focus on immutability and concurrency. For backend systems, it can run on the JVM and has good accessibility to the java libraries making it very practical.
 
 Rich Hickey has a few really good philosophical talks. He explains a lot about what's wrong with software engineering practices in general.
 
@@ -22,7 +22,7 @@ Learning the language has not been easy though. The syntax and concepts are diff
 * Living Clojure was the easiest book for getting started. It has lots of incremental examples. It also has a week based plan for [exercises](http://4clojure.com)
 * Clojure In Action is also a good book. I'm trying to go through this now.
 
-Clojure also has a different data-driven approach to designing libraries. That's going to take some time to get used to. The book "Joy of Clojure" is about the idoimatic way of doing things. That's another book to read in the future.
+Clojure also has a different data-driven approach to designing libraries. That's going to take some time to get used to. The book "Joy of Clojure" is about the idiomatic way of doing things. That's another book to read in the future.
 
 Various Concepts-
 
