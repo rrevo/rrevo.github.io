@@ -10,4 +10,4 @@ Open browser to http://localhost:4001
 
 ## One time jekyll install
 
-`gem install jekyll jekyll-paginate`
+`sudo gem install jekyll jekyll-paginate`
